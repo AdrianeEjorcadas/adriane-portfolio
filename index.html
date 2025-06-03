@@ -12,7 +12,7 @@
   </head>
   <body class="m-8 bg-black font-sans">
     <!-- NAV BAR -->
-    <nav class="flex justify-between items-center md:px-16 lg:px-50">
+    <nav class="flex justify-between items-center md:px-16 lg:px-50 xl:px-80">
       <!-- LOGO -->
       <div>
         <a
@@ -26,7 +26,7 @@
         <ul class="flex gap-4">
           <li>
             <a
-              href="#"
+              href="#experience"
               class="inline-block text-slate-400 hover:scale-125 transition-transform duration-200 hover:text-white hover:font-bold"
               >experience</a
             >
@@ -57,7 +57,7 @@
     </nav>
 
     <!-- HERO SECTION -->
-    <main id="about" class="mt-16 space-y-3 md:px-16 lg:px-50">
+    <main id="about" class="mt-16 space-y-3 md:px-16 lg:px-50 xl:px-80">
       <!-- HERO CAPTION -->
       <div class="text-white space-y-3 text-sm">
         <p class="text-slate-400">hi there <span></span> , I'm</p>
@@ -76,7 +76,8 @@
         <ul class="flex gap-2 items-center">
           <li>
             <a
-              href="#"
+              href="./src/files/ADRIANE_Z.EJORCADAS_CV (3).pdf"
+              download="Adriane Ejorcadas_CV"
               class="bg-white font-semibold capitalize text-sm rounded-lg px-4 py-2 bounce-hover"
               >resume
             </a>
@@ -101,15 +102,41 @@
     </main>
 
     <!-- ABOUT ME -->
-    <section class="mt-16 md:px-16 lg:px-50">
+    <section class="mt-16 md:px-16 lg:px-50 xl:px-80">
       <div class="space-y-5">
-        <h2 class="font-semibold text-gray-400">about me.</h2>
+        <h2 class="font-bold text-gray-400">about me.</h2>
         <p class="text-gray-300 text-sm tracking-widest">
           Hey! I'm a software engineer dedicated to building scalable,
           efficient, and reliable systems. With expertise in modern web
           development tools, deployment platforms, and system maintenance, I
           craft solutions that optimize performance and workflow efficiency.
         </p>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE  -->
+    <section id="experience" class="mt-16 md:px-16 lg:px-50 xl:px-80">
+      <h2 class="font-bold text-gray-400">experience.</h2>
+      <div class="pt-5">
+        <!-- EXPERIENCE INFO 1-->
+        <div
+          class="border-l-2 border-l-gray-500 hover:border-l-gray-200 transition-all duration-500"
+        >
+          <div class="pl-4 md:flex md:justify-between tracking-wider">
+            <div>
+              <h2 class="text-xl text-white">Application Systems Engineer</h2>
+              <p class="text-xs text-gray-400">
+                <span class="font-semibold"
+                  >Weserv Systems International, Inc</span
+                >
+                - Taguig City, Philippines
+              </p>
+            </div>
+            <div>
+              <p class="text-sm text-gray-400">Nov, 2021 - Present</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </body>
