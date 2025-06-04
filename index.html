@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Adriane Ejorcadas</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
@@ -56,16 +57,23 @@
       </div>
     </nav>
 
-    <main class="space-y-16">
+    <main class="space-y-20">
       <!-- HERO SECTION -->
-      <section id="about" class="mt-16 space-y-3">
+      <section
+        id="about"
+        class="mt-16 space-y-3"
+        data-aos="zoom-in"
+        data-aos-delay="200"
+        data-aos-duration="1000"
+        data-aos-offset="200"
+      >
         <!-- HERO CAPTION -->
         <div class="text-white space-y-3 text-sm">
-          <p class="text-slate-400">hi there <span></span> , I'm</p>
+          <p class="text-slate-400">hi there <span>👋</span> , I'm</p>
           <h2 class="text-6xl font-bold">Adriane Ejorcadas</h2>
           <p>
             Cavite, PH
-            <span><i class="fa-solid fa-location-dot ml-2"></i></span>
+            <span><i class="fa-solid fa-location-dot ml-2"></i> 🗺️</span>
           </p>
           <p class="tracking-widest">
             A
@@ -108,9 +116,14 @@
       </section>
 
       <!-- ABOUT ME -->
-      <section>
+      <section
+        id="about"
+        data-aos="fade-up"
+        data-aos-delay="200"
+        data-aos-duration="1000"
+      >
         <div class="space-y-5">
-          <h2 class="font-bold text-gray-400">about me.</h2>
+          <h2 class="font-extrabold text-gray-400">about me. 👨‍💻</h2>
           <p class="text-gray-300 text-sm tracking-widest">
             Hey! I'm a software engineer dedicated to building scalable,
             efficient, and reliable systems. With expertise in modern web
@@ -122,11 +135,15 @@
 
       <!-- EXPERIENCE  -->
       <section id="experience">
-        <h2 class="font-bold text-gray-400">experience.</h2>
+        <h2 class="font-extrabold text-gray-400">experience. 💼</h2>
         <div class="pt-5 space-y-8">
           <!-- EXPERIENCE INFO 1-->
           <div
             class="border-l-2 border-l-gray-500 hover:border-l-gray-200 transition-all duration-500"
+            data-aos="fade-right"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="1000"
           >
             <!-- POSITION AND JOB DESCRIPTION -->
             <div class="space-y-2">
@@ -193,6 +210,10 @@
           <!-- EXPERIENCE INFO 2-->
           <div
             class="border-l-2 border-l-gray-500 hover:border-l-gray-200 transition-all duration-500"
+            data-aos="fade-left"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="1000"
           >
             <!-- POSITION AND JOB DESCRIPTION -->
             <div class="space-y-2">
@@ -264,6 +285,9 @@
           <!-- EXPERIENCE INFO 3-->
           <div
             class="border-l-2 border-l-gray-500 hover:border-l-gray-200 transition-all duration-500"
+            data-aos="fade-right"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="1000"
           >
             <!-- POSITION AND JOB DESCRIPTION -->
             <div class="space-y-2">
@@ -312,6 +336,116 @@
           </div>
         </div>
       </section>
+
+      <!-- PROJECTS -->
+      <section id="projects">
+        <h2 class="font-extrabold text-gray-400">projects. 📁</h2>
+        <div class="pt-5 space-y-8">
+          <!-- PROJECT 1 -->
+          <div
+            class="border-l-2 border-l-gray-500 hover:border-l-gray-200 transition-all duration-500"
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="1000"
+          >
+            <div class="pl-4 tracking-wider text-white">
+              <!-- PROJECT TITLE -->
+              <div class="flex gap-2">
+                <h2>Password Storage API</h2>
+                <a href="#"><i class="fa-solid fa-link text-xs"></i></a>
+              </div>
+              <!-- PROJECT DESCRIPTION -->
+              <div class="pl-3 space-y-2">
+                <ul class="text-gray-400 text-sm list-disc">
+                  <li>
+                    Developed and implemented a secure Password Storage API
+                    using ASP.NET Core Web API.
+                  </li>
+                  <li>
+                    Integrated Microsoft SQL Server with Entity Framework Core
+                    (EF Core) for efficient data management
+                  </li>
+                  <li>
+                    Designed a scalable architecture with hashed and salted
+                    password storage to enhance security.
+                  </li>
+                  <li>
+                    Implemented Swagger for streamlined API testing and
+                    documentation.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- PROJECT 2 -->
+          <div
+            class="border-l-2 border-l-gray-500 hover:border-l-gray-200 transition-all duration-500"
+            data-aos="fade-down"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="1000"
+          >
+            <div class="pl-4 tracking-wider text-white">
+              <!-- PROJECT TITLE -->
+              <div class="flex gap-2">
+                <h2>User Management API</h2>
+                <a href="#"><i class="fa-solid fa-link text-xs"></i></a>
+              </div>
+              <!-- PROJECT DESCRIPTION -->
+              <div class="pl-3 space-y-2">
+                <ul class="text-gray-400 text-sm list-disc">
+                  <li>
+                    Developed and implemented a User Management API using
+                    ASP.NET Core Web API for efficient user account handling.
+                  </li>
+                  <li>
+                    Integrated Microsoft SQL Server with Entity Framework Core
+                    (EF Core) for seamless data management and retrieval.
+                  </li>
+                  <li>
+                    Utilized Swagger and Postman for API documentation, testing,
+                    and debugging.
+                  </li>
+                  <li>
+                    Integrated Google SMTP to enable secure email notifications
+                    and account-related communications.
+                  </li>
+                  <li>
+                    Implemented Argon2 for strong password hashing, enhancing
+                    security against brute-force attacks.
+                  </li>
+                  <li>
+                    Added authorization and authentication mechanisms to control
+                    access and protect sensitive data.
+                  </li>
+                  <li>
+                    Strengthened account security by implementing account
+                    lockout and attempts timeout features to mitigate
+                    unauthorized login attempts.
+                  </li>
+                  <li>
+                    Designed a custom token creation approach for
+                    authentication, ensuring tailored session management and
+                    enhanced security.
+                  </li>
+                  <li>
+                    Strengthened account security by implementing account
+                    lockout and attempts timeout features to mitigate
+                    unauthorized login attempts.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <!-- ANIMATION ON SCROLL -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
