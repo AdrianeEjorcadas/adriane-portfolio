@@ -20,3 +20,7 @@
   @apply inline-block transition-all duration-1000;
   @apply hover:animate-bounce;
 }
+
+.list-design {
+  @apply px-3 py-1 rounded-lg bg-zinc-800 text-2xs text-gray-300;
+}

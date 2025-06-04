@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -10,9 +10,9 @@
     />
     <link rel="stylesheet" href="./src/style.css" />
   </head>
-  <body class="m-8 bg-black font-sans">
+  <body class="m-8 md:mx-24 lg:mx-58 xl:mx-88 bg-black font-sans">
     <!-- NAV BAR -->
-    <nav class="flex justify-between items-center md:px-16 lg:px-50 xl:px-80">
+    <nav class="flex justify-between items-center">
       <!-- LOGO -->
       <div>
         <a
@@ -56,88 +56,262 @@
       </div>
     </nav>
 
-    <!-- HERO SECTION -->
-    <main id="about" class="mt-16 space-y-3 md:px-16 lg:px-50 xl:px-80">
-      <!-- HERO CAPTION -->
-      <div class="text-white space-y-3 text-sm">
-        <p class="text-slate-400">hi there <span></span> , I'm</p>
-        <h2 class="text-6xl font-bold">Adriane Ejorcadas</h2>
-        <p>
-          Cavite, PH <span><i class="fa-solid fa-location-dot ml-2"></i></span>
-        </p>
-        <p class="tracking-widest">
-          A Software Engineer passionate about building scalable systems,
-          optimizing workflows, and maintaining system stability. Let's create
-          impactful solutions!
-        </p>
-      </div>
-      <!-- ACTIVE BUTTONS -->
-      <div>
-        <ul class="flex gap-2 items-center">
-          <li>
-            <a
-              href="./src/files/ADRIANE_Z.EJORCADAS_CV (3).pdf"
-              download="Adriane Ejorcadas_CV"
-              class="bg-white font-semibold capitalize text-sm rounded-lg px-4 py-2 bounce-hover"
-              >resume
-            </a>
-          </li>
-          <li>
-            <a href="#" class="text-white px-4 py-2 bounce-hover">
-              <i class="fa-regular fa-envelope text-lg"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="text-white px-4 py-2 bounce-hover">
-              <i class="fab fa-github text-lg"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="text-white px-4 py-2 bounce-hover">
-              <i class="fab fa-linkedin-in text-lg"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </main>
+    <main class="space-y-16">
+      <!-- HERO SECTION -->
+      <section id="about" class="mt-16 space-y-3">
+        <!-- HERO CAPTION -->
+        <div class="text-white space-y-3 text-sm">
+          <p class="text-slate-400">hi there <span></span> , I'm</p>
+          <h2 class="text-6xl font-bold">Adriane Ejorcadas</h2>
+          <p>
+            Cavite, PH
+            <span><i class="fa-solid fa-location-dot ml-2"></i></span>
+          </p>
+          <p class="tracking-widest">
+            A
+            <span
+              class="inline-block font-extrabold tracking-wider hover:-rotate-3 transition-all duration-500 cursor-pointer"
+              >Software Engineer</span
+            >
+            passionate about building scalable systems, optimizing workflows,
+            and maintaining system stability. Let's create impactful solutions!
+          </p>
+        </div>
+        <!-- ACTIVE BUTTONS -->
+        <div>
+          <ul class="flex gap-2 items-center">
+            <li>
+              <a
+                href="./src/files/ADRIANE_Z.EJORCADAS_CV (3).pdf"
+                download="Adriane Ejorcadas_CV"
+                class="bg-white font-semibold capitalize text-sm rounded-lg px-4 py-2 bounce-hover"
+                >resume
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-white px-4 py-2 bounce-hover">
+                <i class="fa-regular fa-envelope text-lg"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-white px-4 py-2 bounce-hover">
+                <i class="fab fa-github text-lg"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-white px-4 py-2 bounce-hover">
+                <i class="fab fa-linkedin-in text-lg"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-    <!-- ABOUT ME -->
-    <section class="mt-16 md:px-16 lg:px-50 xl:px-80">
-      <div class="space-y-5">
-        <h2 class="font-bold text-gray-400">about me.</h2>
-        <p class="text-gray-300 text-sm tracking-widest">
-          Hey! I'm a software engineer dedicated to building scalable,
-          efficient, and reliable systems. With expertise in modern web
-          development tools, deployment platforms, and system maintenance, I
-          craft solutions that optimize performance and workflow efficiency.
-        </p>
-      </div>
-    </section>
+      <!-- ABOUT ME -->
+      <section>
+        <div class="space-y-5">
+          <h2 class="font-bold text-gray-400">about me.</h2>
+          <p class="text-gray-300 text-sm tracking-widest">
+            Hey! I'm a software engineer dedicated to building scalable,
+            efficient, and reliable systems. With expertise in modern web
+            development tools, deployment platforms, and system maintenance, I
+            craft solutions that optimize performance and workflow efficiency.
+          </p>
+        </div>
+      </section>
 
-    <!-- EXPERIENCE  -->
-    <section id="experience" class="mt-16 md:px-16 lg:px-50 xl:px-80">
-      <h2 class="font-bold text-gray-400">experience.</h2>
-      <div class="pt-5">
-        <!-- EXPERIENCE INFO 1-->
-        <div
-          class="border-l-2 border-l-gray-500 hover:border-l-gray-200 transition-all duration-500"
-        >
-          <div class="pl-4 md:flex md:justify-between tracking-wider">
-            <div>
-              <h2 class="text-xl text-white">Application Systems Engineer</h2>
-              <p class="text-xs text-gray-400">
-                <span class="font-semibold"
-                  >Weserv Systems International, Inc</span
-                >
-                - Taguig City, Philippines
-              </p>
+      <!-- EXPERIENCE  -->
+      <section id="experience">
+        <h2 class="font-bold text-gray-400">experience.</h2>
+        <div class="pt-5 space-y-8">
+          <!-- EXPERIENCE INFO 1-->
+          <div
+            class="border-l-2 border-l-gray-500 hover:border-l-gray-200 transition-all duration-500"
+          >
+            <!-- POSITION AND JOB DESCRIPTION -->
+            <div class="space-y-2">
+              <!-- POSITION -->
+              <div
+                class="pl-4 md:flex md:justify-between tracking-wider text-white"
+              >
+                <div>
+                  <h2 class="text-xl">Application Systems Engineer</h2>
+                  <p class="text-xs">
+                    <span class="font-semibold"
+                      >Weserv Systems International, Inc</span
+                    >
+                    - Taguig City, Philippines
+                  </p>
+                </div>
+                <div>
+                  <p class="text-sm text-gray-400">Nov, 2021 - Present</p>
+                </div>
+              </div>
+              <!-- JOB DESCRIPTION -->
+              <div class="pl-7 space-y-1">
+                <ul class="text-gray-400 text-sm list-disc">
+                  <li>
+                    Provide ongoing maintenance and support to ensure the
+                    stability and reliability of legacy systems.
+                  </li>
+                  <li>
+                    Address and resolve any issues or bugs that arise,
+                    minimizing downtime and ensuring seamless operation.
+                  </li>
+                  <li>
+                    Create comprehensive documentation for system enhancements,
+                    maintenance procedures, and user guides.
+                  </li>
+                  <li>
+                    Delivered comprehensive documentation for all software
+                    development projects, enhancing team understanding and
+                    project continuity.
+                  </li>
+                  <li>
+                    Led and managed maintenance and enhancement project for
+                    Operations and Maintenance
+                  </li>
+                </ul>
+              </div>
+              <!-- TECHNOLOGIES USED -->
+              <div class="pl-7 space-y-1">
+                <ul class="text-white flex flex-wrap gap-2">
+                  <li class="list-design">PL SQL</li>
+                  <li class="list-design">HTML</li>
+                  <li class="list-design">CSS</li>
+                  <li class="list-design">Javascript</li>
+                  <li class="list-design">VBA</li>
+                  <li class="list-design">ServiceNow</li>
+                  <li class="list-design">Java</li>
+                  <li class="list-design">JSP</li>
+                  <li class="list-design">Batch Script</li>
+                  <li class="list-design">Shell Script</li>
+                </ul>
+              </div>
             </div>
-            <div>
-              <p class="text-sm text-gray-400">Nov, 2021 - Present</p>
+          </div>
+          <!-- EXPERIENCE INFO 2-->
+          <div
+            class="border-l-2 border-l-gray-500 hover:border-l-gray-200 transition-all duration-500"
+          >
+            <!-- POSITION AND JOB DESCRIPTION -->
+            <div class="space-y-2">
+              <!-- POSITION -->
+              <div
+                class="pl-4 md:flex md:justify-between tracking-wider text-white"
+              >
+                <div>
+                  <h2 class="text-xl">Programmer / Analyst</h2>
+                  <p class="text-xs">
+                    <span class="font-semibold"
+                      >Maximum Solution Corporation</span
+                    >
+                    - Cavite, Philippines
+                  </p>
+                </div>
+                <div>
+                  <p class="text-sm text-gray-400">Sept, 2020 - Sept, 2021</p>
+                </div>
+              </div>
+              <!-- JOB DESCRIPTION -->
+              <div class="pl-7 space-y-1">
+                <ul class="text-gray-400 text-sm list-disc">
+                  <li>
+                    Developed Excel macro templates that used for generating
+                    monthly reports
+                  </li>
+                  <li>
+                    Obtained, studied, and manipulated data to analyze systems'
+                    full capabilities
+                  </li>
+                  <li>
+                    Handled and maintained internal website and the database of
+                    the Quality Department
+                  </li>
+                  <li>
+                    Developed and maintained internal web applications to
+                    streamline operations and enhance user experience
+                  </li>
+                  <li>
+                    Streamlined workflows and enhanced macro templates by
+                    automating repetitive tasks, significantly reducing time
+                    spent on manual processes and boosting overall productivity.
+                  </li>
+                  <li>
+                    Revamped the internal website design, improving usability,
+                    streamlining navigation, and enhancing overall aesthetics to
+                    boost user engagement and efficiency
+                  </li>
+                </ul>
+              </div>
+              <!-- TECHNOLOGIES USED -->
+              <div class="pl-7 space-y-1">
+                <ul class="text-white flex flex-wrap gap-2">
+                  <li class="list-design">Asp Classic</li>
+                  <li class="list-design">HTML</li>
+                  <li class="list-design">CSS</li>
+                  <li class="list-design">Javascript</li>
+                  <li class="list-design">VBA</li>
+                  <li class="list-design">Bootstrap</li>
+                  <li class="list-design">C#</li>
+                  <li class="list-design">JSP</li>
+                  <li class="list-design">MS SQL</li>
+                  <li class="list-design">Coldfusion (Email)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- EXPERIENCE INFO 3-->
+          <div
+            class="border-l-2 border-l-gray-500 hover:border-l-gray-200 transition-all duration-500"
+          >
+            <!-- POSITION AND JOB DESCRIPTION -->
+            <div class="space-y-2">
+              <!-- POSITION -->
+              <div
+                class="pl-4 md:flex md:justify-between tracking-wider text-white"
+              >
+                <div>
+                  <h2 class="text-xl">Programmer</h2>
+                  <p class="text-xs">
+                    <span class="font-semibold">HRD Singapore Pte. Ltd.</span>
+                    - Cavite, Philippines
+                  </p>
+                </div>
+                <div>
+                  <p class="text-sm text-gray-400">Sept, 2019 - Mar, 2020</p>
+                </div>
+              </div>
+              <!-- JOB DESCRIPTION -->
+              <div class="pl-7 space-y-1">
+                <ul class="text-gray-400 text-sm list-disc">
+                  <li>
+                    Developed a feature in the system that can track the status
+                    of the containers that was used for importing and exporting
+                    of product
+                  </li>
+                  <li>Maintained multiple system for Logistic Departmen</li>
+                  <li>
+                    Generates report that was requested by the Logistic
+                    Department
+                  </li>
+                </ul>
+              </div>
+              <!-- TECHNOLOGIES USED -->
+              <div class="pl-7 space-y-1">
+                <ul class="text-white flex flex-wrap gap-2">
+                  <li class="list-design">VBScript</li>
+                  <li class="list-design">HTML</li>
+                  <li class="list-design">CSS</li>
+                  <li class="list-design">Javascript</li>
+                  <li class="list-design">MySQL</li>
+                  <li class="list-design">Magic XPA</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
   </body>
 </html>
