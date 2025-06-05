@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="bg-white text-black dark:bg-black dark:text-white">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,14 +14,14 @@
         />
         <link rel="stylesheet" href="./src/style.css" />
     </head>
-    <body class="m-8 bg-black font-sans md:mx-24 lg:mx-58 xl:mx-88">
+    <body class="m-8 font-sans">
         <!-- NAV BAR -->
         <nav class="flex items-center justify-between">
             <!-- LOGO -->
             <div>
                 <a
                     href="#"
-                    class="inline-block font-bold text-white transition-transform duration-200 hover:scale-125"
+                    class="inline-block font-bold transition-transform duration-200 hover:scale-125 dark:text-white"
                     >adriane.</a
                 >
             </div>
@@ -31,30 +31,37 @@
                     <li>
                         <a
                             href="#experience"
-                            class="inline-block text-slate-400 transition-transform duration-200 hover:scale-125 hover:font-bold hover:text-white"
+                            class="inline-block text-gray-800 transition-transform duration-200 hover:scale-125 hover:font-bold dark:text-slate-400 dark:hover:text-white"
                             >experience</a
                         >
                     </li>
                     <li>
                         <a
                             href="#"
-                            class="inline-block text-slate-400 transition-transform duration-200 hover:scale-125 hover:font-bold hover:text-white"
+                            class="inline-block text-gray-800 transition-transform duration-200 hover:scale-125 hover:font-bold dark:text-slate-400 dark:hover:text-white"
                             >projects</a
                         >
                     </li>
                     <li>
                         <a
                             href="#"
-                            class="inline-block text-slate-400 transition-transform duration-200 hover:scale-125 hover:font-bold hover:text-white"
+                            class="inline-block text-gray-800 transition-transform duration-200 hover:scale-125 hover:font-bold dark:text-slate-400 dark:hover:text-white"
                             >skills</a
                         >
                     </li>
                     <li>
-                        <a
-                            href="#"
-                            class="inline-block text-slate-400 transition-transform duration-200 hover:scale-125 hover:font-bold hover:text-white"
-                            >theme</a
+                        <button
+                            onclick="document.documentElement.classList.toggle('dark')"
+                            class="fixed top-4 right-4 z-50 flex items-center justify-center rounded bg-gray-200 px-3 py-1 text-xs font-semibold text-gray-800 shadow hover:bg-gray-300 dark:bg-gray-800 dark:text-gray-200 dark:hover:bg-gray-700"
+                            aria-label="Toggle Theme"
                         >
+                            <i
+                                class="fa-solid fa-sun block text-lg dark:hidden"
+                            ></i>
+                            <i
+                                class="fa-solid fa-moon hidden text-lg dark:block"
+                            ></i>
+                        </button>
                     </li>
                 </ul>
             </div>
@@ -72,8 +79,10 @@
                 data-aos-offset="200"
             >
                 <!-- HERO CAPTION -->
-                <div class="space-y-3 text-sm text-white">
-                    <p class="text-slate-400">hi there <span>👋</span> , I'm</p>
+                <div class="space-y-3 text-sm dark:text-white">
+                    <p class="text-slate-800 dark:text-slate-400">
+                        hi there <span>👋</span> , I'm
+                    </p>
                     <h2 class="text-6xl font-bold">Adriane Ejorcadas</h2>
                     <p>
                         Cavite, PH
@@ -100,7 +109,7 @@
                             <a
                                 href="./src/files/ADRIANE_Z.EJORCADAS_CV (3).pdf"
                                 download="Adriane Ejorcadas_CV"
-                                class="inline-block rounded-lg bg-white px-4 py-2 text-sm font-semibold capitalize transition-all duration-300 hover:scale-125"
+                                class="inline-block rounded-lg bg-gray-700 px-4 py-2 text-sm font-semibold text-white capitalize transition-all duration-300 hover:scale-125 dark:bg-white dark:text-black"
                                 >resume
                             </a>
                             <span
@@ -111,7 +120,7 @@
                         <li>
                             <a
                                 href="mailto:adrianeejorcadas97@gmail.com"
-                                class="bounce-hover group relative px-4 py-2 text-white"
+                                class="bounce-hover group relative px-4 py-2 dark:text-white"
                             >
                                 <i class="fa-regular fa-envelope text-lg"></i>
                                 <span
@@ -124,7 +133,7 @@
                             <a
                                 href="https://github.com/AdrianeEjorcadas"
                                 target="_blank"
-                                class="bounce-hover px-4 py-2 text-white"
+                                class="bounce-hover px-4 py-2 dark:text-white"
                             >
                                 <i class="fab fa-github text-lg"></i>
                             </a>
@@ -133,7 +142,7 @@
                             <a
                                 href="https://linkedin.com/in/adrianeejorcadas"
                                 target="_blank"
-                                class="bounce-hover px-4 py-2 text-white"
+                                class="bounce-hover px-4 py-2 dark:text-white"
                             >
                                 <i class="fab fa-linkedin-in text-lg"></i>
                             </a>
@@ -150,8 +159,10 @@
                 data-aos-duration="1000"
             >
                 <div class="space-y-5">
-                    <h2 class="font-extrabold text-gray-400">about me. 👨‍💻</h2>
-                    <p class="text-sm tracking-widest text-gray-300">
+                    <h2 class="font-extrabold dark:text-gray-400">
+                        about me. 👨‍💻
+                    </h2>
+                    <p class="text-sm tracking-widest dark:text-gray-300">
                         Hey! I'm a software engineer dedicated to building
                         scalable, efficient, and reliable systems. With
                         expertise in modern web development tools, deployment
@@ -163,11 +174,13 @@
 
             <!-- EXPERIENCE  -->
             <section id="experience">
-                <h2 class="font-extrabold text-gray-400">experience. 💼</h2>
+                <h2 class="font-extrabold dark:text-gray-400">
+                    experience. 💼
+                </h2>
                 <div class="space-y-8 pt-5">
                     <!-- EXPERIENCE INFO 1-->
                     <div
-                        class="border-l-2 border-l-gray-500 transition-all duration-500 hover:border-l-gray-200"
+                        class="border-l-2 transition-all duration-500 hover:border-l-gray-200 dark:border-l-gray-500"
                         data-aos="fade-right"
                         data-aos-offset="200"
                         data-aos-easing="ease-in-sine"
@@ -177,7 +190,7 @@
                         <div class="space-y-2">
                             <!-- POSITION -->
                             <div
-                                class="pl-4 tracking-wider text-white md:flex md:justify-between"
+                                class="pl-4 tracking-wider md:flex md:justify-between dark:text-white"
                             >
                                 <div>
                                     <h2 class="text-xl">
@@ -192,14 +205,18 @@
                                     </p>
                                 </div>
                                 <div>
-                                    <p class="text-sm text-gray-400">
+                                    <p
+                                        class="text-sm text-gray-800 dark:text-gray-400"
+                                    >
                                         Nov, 2021 - Present
                                     </p>
                                 </div>
                             </div>
                             <!-- JOB DESCRIPTION -->
                             <div class="space-y-1 pl-7">
-                                <ul class="list-disc text-sm text-gray-400">
+                                <ul
+                                    class="list-disc text-sm text-gray-800 dark:text-gray-400"
+                                >
                                     <li>
                                         Provide ongoing maintenance and support
                                         to ensure the stability and reliability
@@ -247,7 +264,7 @@
                     </div>
                     <!-- EXPERIENCE INFO 2-->
                     <div
-                        class="border-l-2 border-l-gray-500 transition-all duration-500 hover:border-l-gray-200"
+                        class="border-l-2 transition-all duration-500 hover:border-l-gray-200 dark:border-l-gray-400"
                         data-aos="fade-left"
                         data-aos-offset="200"
                         data-aos-easing="ease-in-sine"
@@ -257,7 +274,7 @@
                         <div class="space-y-2">
                             <!-- POSITION -->
                             <div
-                                class="pl-4 tracking-wider text-white md:flex md:justify-between"
+                                class="pl-4 tracking-wider md:flex md:justify-between dark:text-white"
                             >
                                 <div>
                                     <h2 class="text-xl">
@@ -271,14 +288,18 @@
                                     </p>
                                 </div>
                                 <div>
-                                    <p class="text-sm text-gray-400">
+                                    <p
+                                        class="text-sm text-gray-800 dark:text-gray-400"
+                                    >
                                         Sept, 2020 - Sept, 2021
                                     </p>
                                 </div>
                             </div>
                             <!-- JOB DESCRIPTION -->
                             <div class="space-y-1 pl-7">
-                                <ul class="list-disc text-sm text-gray-400">
+                                <ul
+                                    class="list-disc text-sm text-gray-800 dark:text-gray-400"
+                                >
                                     <li>
                                         Developed Excel macro templates that
                                         used for generating monthly reports
@@ -315,7 +336,7 @@
                             </div>
                             <!-- TECHNOLOGIES USED -->
                             <div class="space-y-1 pl-7">
-                                <ul class="flex flex-wrap gap-2 text-white">
+                                <ul class="dartext-white flex flex-wrap gap-2">
                                     <li class="list-design">ASP Classic</li>
                                     <li class="list-design">HTML</li>
                                     <li class="list-design">CSS</li>
@@ -334,7 +355,7 @@
                     </div>
                     <!-- EXPERIENCE INFO 3-->
                     <div
-                        class="border-l-2 border-l-gray-500 transition-all duration-500 hover:border-l-gray-200"
+                        class="border-l-2 transition-all duration-500 hover:border-l-gray-200 dark:border-l-gray-500"
                         data-aos="fade-right"
                         data-aos-easing="ease-in-sine"
                         data-aos-duration="1000"
@@ -343,7 +364,7 @@
                         <div class="space-y-2">
                             <!-- POSITION -->
                             <div
-                                class="pl-4 tracking-wider text-white md:flex md:justify-between"
+                                class="pl-4 tracking-wider md:flex md:justify-between dark:text-white"
                             >
                                 <div>
                                     <h2 class="text-xl">Programmer</h2>
@@ -355,7 +376,9 @@
                                     </p>
                                 </div>
                                 <div>
-                                    <p class="text-sm text-gray-400">
+                                    <p
+                                        class="text-sm text-gray-800 dark:text-gray-400"
+                                    >
                                         Sept, 2019 - Mar, 2020
                                     </p>
                                 </div>
@@ -397,7 +420,7 @@
 
             <!-- PROJECTS -->
             <section id="projects">
-                <h2 class="font-extrabold text-gray-400">projects. 📁</h2>
+                <h2 class="font-extrabold dark:text-gray-400">projects. 📁</h2>
                 <div class="space-y-8 pt-5">
                     <!-- PROJECT 1 -->
                     <div
@@ -407,10 +430,12 @@
                         data-aos-easing="ease-in-sine"
                         data-aos-duration="1000"
                     >
-                        <div class="pl-4 tracking-wider text-white">
+                        <div class="pl-4 tracking-wider dark:text-white">
                             <!-- PROJECT TITLE -->
                             <div class="flex gap-2">
-                                <h2>Password Storage API</h2>
+                                <h2 class="font-semibold">
+                                    Password Storage API
+                                </h2>
                                 <a
                                     href="https://github.com/AdrianeEjorcadas/PasswordStorageApi/tree/master/PasswordStorageApi"
                                     target="_blank"
@@ -424,7 +449,9 @@
                             </div>
                             <!-- PROJECT DESCRIPTION -->
                             <div class="space-y-2 pl-3">
-                                <ul class="list-disc text-sm text-gray-400">
+                                <ul
+                                    class="list-disc text-sm text-gray-800 dark:text-gray-400"
+                                >
                                     <li>
                                         Developed and implemented a secure
                                         Password Storage API using ASP.NET Core
@@ -456,10 +483,12 @@
                         data-aos-easing="ease-in-sine"
                         data-aos-duration="1000"
                     >
-                        <div class="pl-4 tracking-wider text-white">
+                        <div class="pl-4 tracking-wider dark:text-white">
                             <!-- PROJECT TITLE -->
                             <div class="flex gap-2">
-                                <h2>User Management API</h2>
+                                <h2 class="font-semibold">
+                                    User Management API
+                                </h2>
                                 <a
                                     href="https://github.com/AdrianeEjorcadas/PasswordStorageApi/tree/master/UserManagementApi"
                                     target="_blank"
@@ -473,7 +502,9 @@
                             </div>
                             <!-- PROJECT DESCRIPTION -->
                             <div class="space-y-2 pl-3">
-                                <ul class="list-disc text-sm text-gray-400">
+                                <ul
+                                    class="list-disc text-sm text-gray-800 dark:text-gray-400"
+                                >
                                     <li>
                                         Developed and implemented a User
                                         Management API using ASP.NET Core Web
@@ -530,7 +561,7 @@
 
             <!-- SKILLS -->
             <section id="skills">
-                <h2 class="font-extrabold text-gray-400">skills. 🛠️</h2>
+                <h2 class="font-extrabold dark:text-gray-400">skills. 🛠️</h2>
                 <!-- SKILLS TREE -->
                 <div
                     class="space-y-4 pt-5"
@@ -541,13 +572,13 @@
                 >
                     <!-- SKILL CATEGORY 1 -->
                     <div
-                        class="text-sm text-white md:grid md:grid-cols-[1fr_2fr] md:gap-x-4"
+                        class="text-sm md:grid md:grid-cols-[1fr_2fr] md:gap-x-4 dark:text-white"
                     >
                         <div>
-                            <h3>Languages:</h3>
+                            <h3 class="font-semibold">Languages:</h3>
                         </div>
                         <div
-                            class="flex flex-wrap gap-2 pt-1 text-xs text-gray-400"
+                            class="flex flex-wrap gap-2 pt-1 text-xs text-gray-800 dark:text-gray-400"
                         >
                             <p>Java,&nbsp;</p>
                             <p>C#,&nbsp;</p>
@@ -561,13 +592,15 @@
                     </div>
                     <!-- SKILL CATEGORY 2 -->
                     <div
-                        class="text-sm text-white md:grid md:grid-cols-[1fr_2fr] md:gap-x-4"
+                        class="text-sm md:grid md:grid-cols-[1fr_2fr] md:gap-x-4 dark:text-white"
                     >
                         <div>
-                            <h3>Frameworks and Libraries:</h3>
+                            <h3 class="font-semibold">
+                                Frameworks and Libraries:
+                            </h3>
                         </div>
                         <div
-                            class="flex flex-wrap gap-1 pt-1 text-xs text-gray-400"
+                            class="flex flex-wrap gap-1 pt-1 text-xs text-gray-800 dark:text-gray-400"
                         >
                             <p>ASP.NET Core,&nbsp;</p>
                             <p>Entity Framework Core (EF Core),&nbsp;</p>
@@ -578,13 +611,13 @@
                     </div>
                     <!-- SKILL CATEGORY 3 -->
                     <div
-                        class="text-sm text-white md:grid md:grid-cols-[1fr_2fr] md:gap-x-4"
+                        class="text-sm md:grid md:grid-cols-[1fr_2fr] md:gap-x-4 dark:text-white"
                     >
                         <div>
-                            <h3>Databases:</h3>
+                            <h3 class="font-semibold">Databases:</h3>
                         </div>
                         <div
-                            class="flex flex-wrap gap-1 pt-1 text-xs text-gray-400"
+                            class="flex flex-wrap gap-1 pt-1 text-xs text-gray-800 dark:text-gray-400"
                         >
                             <p>Microsoft SQL Server (MS SQL),&nbsp;</p>
                             <p>MySQL,&nbsp;</p>
@@ -594,13 +627,13 @@
                     </div>
                     <!-- SKILL CATEGORY 4 -->
                     <div
-                        class="text-sm text-white md:grid md:grid-cols-[1fr_2fr] md:gap-x-4"
+                        class="text-sm md:grid md:grid-cols-[1fr_2fr] md:gap-x-4 dark:text-white"
                     >
                         <div>
-                            <h3>Tools and Platforms:</h3>
+                            <h3 class="font-semibold">Tools and Platforms:</h3>
                         </div>
                         <div
-                            class="flex flex-wrap gap-1 pt-1 text-xs text-gray-400"
+                            class="flex flex-wrap gap-1 pt-1 text-xs text-gray-800 dark:text-gray-400"
                         >
                             <p>GitHub,&nbsp;</p>
                             <p>Postman,&nbsp;</p>
@@ -637,25 +670,25 @@
                     <a
                         href="https://github.com/AdrianeEjorcadas"
                         target="_blank"
-                        class="text-gray-400 transition-colors hover:text-white"
+                        class="transition-colors hover:text-gray-600 dark:text-gray-400 dark:hover:text-white"
                     >
                         <i class="fab fa-github text-xl"></i>
                     </a>
                     <a
                         href="https://linkedin.com/in/adrianeejorcadas"
                         target="_blank"
-                        class="text-gray-400 transition-colors hover:text-white"
+                        class="transition-colors hover:text-gray-600 dark:text-gray-400 dark:hover:text-white"
                     >
                         <i class="fab fa-linkedin-in text-xl"></i>
                     </a>
                     <a
                         href="mailto:adrianeejorcadas97@gmail.com"
-                        class="text-gray-400 transition-colors hover:text-white"
+                        class="transition-colors hover:text-gray-600 dark:text-gray-400 dark:hover:text-white"
                     >
                         <i class="fa-regular fa-envelope text-xl"></i>
                     </a>
                 </div>
-                <p class="text-xs text-gray-500">
+                <p class="text-xs dark:text-gray-500">
                     &copy; 2025 Adriane Ejorcadas &mdash; Built with
                     <span class="text-red-500"
                         ><i class="fa-solid fa-heart"></i
