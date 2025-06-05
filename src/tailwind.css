@@ -1,26 +1,30 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 /* @import "@fortawesome/fontawesome-free/css/all.css"; */
 /* @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap"); */
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @theme {
-  --font-sans: "Open Sans", sans-serif;
+    --font-sans: 'Open Sans', sans-serif;
 }
 
 .link-hover {
-  @apply inline-block px-4 py-2 rounded-lg transition-all duration-1000;
-  @apply hover:bg-gray-600 hover:ease-in-out;
+    @apply inline-block rounded-lg px-4 py-2 transition-all duration-1000;
+    @apply hover:bg-gray-600 hover:ease-in-out;
 }
 
 .bounce-hover {
-  @apply inline-block hover:animate-bounce;
+    @apply inline-block hover:animate-bounce;
 }
 
 .menu-link {
-  @apply inline-block transition-all duration-1000;
-  @apply hover:animate-bounce;
+    @apply inline-block transition-all duration-1000;
+    @apply hover:animate-bounce;
 }
 
 .list-design {
-  @apply px-3 py-1 rounded-lg bg-zinc-800 text-2xs text-gray-300;
+    @apply rounded-lg bg-zinc-800 px-3 py-1 text-xs text-gray-300;
 }
+
+/* .tool-tip {
+    @apply pointer-events-none absolute left-1/2 top-full z-10 mt-2 -translate-x-1/2 whitespace-nowrap rounded bg-gray-800 px-2 py-1 text-xs text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100;
+} */
